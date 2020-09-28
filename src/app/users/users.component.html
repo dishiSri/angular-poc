@@ -1,0 +1,29 @@
+<div class="container">
+<h1 class="header">Users</h1>
+
+<div  style= "overflow-x: auto;" >
+    <table class="table">
+        <thead class="tbl-header">
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody class="tbl-content">
+            <ng-container *ngFor="let user of users$;let i = index" >
+             <tr routerLink="/posts/{{user.id}}" style="cursor: pointer;"  >
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.website}}</td>
+                <td>{{user.phone}}</td>
+                <td >{{user.address.street}} - {{user.address.suite}} - {{user.address.city}} - {{user.address.zipcode}} - {{(user.address.geo.lat)}} - - {{(user.address.geo.lat)}}</td>
+            </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+</div>
+

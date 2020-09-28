@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+  }
+  .header {
+    
+    padding: 15px;
+  }
+  .menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+     }
+  
+  .main {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: #0099ffff;
+    overflow-x: auto;
+  }
